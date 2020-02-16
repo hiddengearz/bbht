@@ -185,6 +185,15 @@ cat dns-Jhaddix.txt | head -n -14 > clean-jhaddix-dns.txt
 cd ~/tools/
 echo "done"
 
+echo "downloading httprobe"
+go get -u github.com/tomnomnom/httprobe
+
+echo "downloading assetfinder"
+go get -u github.com/tomnomnom/assetfinder
+
+echo "downloading Amass"
+go get -v -u github.com/OWASP/Amass/v3/...
+
 
 
 echo -e "\n\n\n\n\n\n\n\n\n\n\nDone! All tools are set up in ~/tools"
